@@ -14,8 +14,8 @@ public class PingApplication {
 		SpringApplication.run(PingApplication.class, args);
 	}
 
-	@GetMapping("/pong")
+	@GetMapping("/ping")
 	public String sayHello(@RequestParam(value = "", defaultValue = "") String name) {
-		return String.format("Pong... Did I do it right?");
+		return "pong";
 	}
 }
